@@ -1,0 +1,4 @@
+# LocalDataFormatter
+通过当前设备选中的语言，获取对应的dateformatter
+使用示例：[KKLocalDateFormatter localDateFormatter];
+[KKLocalDateFormatter formatterWithTempletType:KKDateTempletTypeMedium];
