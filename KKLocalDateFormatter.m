@@ -37,7 +37,11 @@ NSString *componentWithTempletType(KKDateTempletType templetType) {
     return nil;
 }
 
-+ (NSString *)formatterWithType:(KKDateTempletType)templetType {
++ (NSString *)localDateFormatter {
+    return [self formatterWithTempletType:KKDateTempletTypeMedium];
+}
+
++ (NSString *)formatterWithTempletType:(KKDateTempletType)templetType {
     
     NSString *language = [self localLanguage];
     NSLocale *currentLocale = [[NSLocale alloc] initWithLocaleIdentifier:language];

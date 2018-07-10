@@ -21,6 +21,8 @@ typedef NS_ENUM(NSUInteger, KKDateTempletType) {
 
 @interface KKLocalDateFormatter : NSObject
 
-+ (NSString *)formatterWithType:(KKDateTempletType)templetType;
++ (NSString *)localDateFormatter;
+
++ (NSString *)formatterWithTempletType:(KKDateTempletType)templetType;
 
 @end
